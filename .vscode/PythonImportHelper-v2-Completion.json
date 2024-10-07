@@ -1,0 +1,210 @@
+[
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "option_menu",
+        "importPath": "streamlit_option_menu",
+        "description": "streamlit_option_menu",
+        "isExtraImport": true,
+        "detail": "streamlit_option_menu",
+        "documentation": {}
+    },
+    {
+        "label": "option_menu",
+        "importPath": "streamlit_option_menu",
+        "description": "streamlit_option_menu",
+        "isExtraImport": true,
+        "detail": "streamlit_option_menu",
+        "documentation": {}
+    },
+    {
+        "label": "home_page",
+        "importPath": "home",
+        "description": "home",
+        "isExtraImport": true,
+        "detail": "home",
+        "documentation": {}
+    },
+    {
+        "label": "home_page",
+        "importPath": "home",
+        "description": "home",
+        "isExtraImport": true,
+        "detail": "home",
+        "documentation": {}
+    },
+    {
+        "label": "pred_page",
+        "importPath": "prediction",
+        "description": "prediction",
+        "isExtraImport": true,
+        "detail": "prediction",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard_page",
+        "importPath": "dashboard",
+        "description": "dashboard",
+        "isExtraImport": true,
+        "detail": "dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard_page",
+        "importPath": "dashboard",
+        "description": "dashboard",
+        "isExtraImport": true,
+        "detail": "dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "pred_page",
+        "importPath": "predictions",
+        "description": "predictions",
+        "isExtraImport": true,
+        "detail": "predictions",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard_page",
+        "kind": 2,
+        "importPath": "app.dashboard",
+        "description": "app.dashboard",
+        "peekOfCode": "def dashboard_page():\n    st.title(\"Feature Insights Dashboard\")\n    st.markdown(\"\"\"<h2 style=\"color:green;\">\n    This dashboard provides insights into various features of the dataset. You can explore the relationships and distributions of these features.\n    </h2>\"\"\", unsafe_allow_html=True)\n    # Sidebar for filter selectors\n    with st.sidebar:\n        st.header(\"Filter Options\")\n        # Ocean Proximity Filter\n        ocean_proximity_filter = st.multiselect(",
+        "detail": "app.dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "app.dashboard",
+        "description": "app.dashboard",
+        "peekOfCode": "df = pd.read_csv(\"housing.csv\")\ndef dashboard_page():\n    st.title(\"Feature Insights Dashboard\")\n    st.markdown(\"\"\"<h2 style=\"color:green;\">\n    This dashboard provides insights into various features of the dataset. You can explore the relationships and distributions of these features.\n    </h2>\"\"\", unsafe_allow_html=True)\n    # Sidebar for filter selectors\n    with st.sidebar:\n        st.header(\"Filter Options\")\n        # Ocean Proximity Filter",
+        "detail": "app.dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "clean_data",
+        "kind": 2,
+        "importPath": "app.data_cleaning",
+        "description": "app.data_cleaning",
+        "peekOfCode": "def clean_data(file_path):\n    pass",
+        "detail": "app.data_cleaning",
+        "documentation": {}
+    },
+    {
+        "label": "home_page",
+        "kind": 2,
+        "importPath": "app.home",
+        "description": "app.home",
+        "peekOfCode": "def home_page():\n    st.title(\"Welcome to the House Price Prediction App\")\n    # Display a relevant image about house price prediction\n    st.image(\"house image.jpg\", caption=\"House Price Prediction\", use_column_width=True)\n    st.markdown(\"\"\"\n    <h3 style=\"color:blue;\">\n    Predicting house prices can be a challenging task, but with the power of machine learning, we make it simple and efficient! \n    This app is designed to help users estimate house prices based on a variety of features like location, age, rooms, and more.\n    </h3>\n    \"\"\", unsafe_allow_html=True)",
+        "detail": "app.home",
+        "documentation": {}
+    },
+    {
+        "label": "home_page",
+        "kind": 2,
+        "importPath": "app.home2",
+        "description": "app.home2",
+        "peekOfCode": "def home_page():\n    st.title(\"Welcome to the House Price Prediction App\")\n    st.image(\"house image.jpg\", caption=\"House image\")\n    st.markdown(\"\"\"\n        Predicting house prices can be a challenging task, but with the power of machine learning, \n        we make it simple and efficient! This app is designed to help users estimate house prices \n        based on a variety of features like location, age, rooms, and more.        \n    \"\"\")\n    st.markdown(\"\"\"\n        ### How it works:",
+        "detail": "app.home2",
+        "documentation": {}
+    },
+    {
+        "label": "selected",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "selected = option_menu(\n    menu_title=None,\n    options=[\"Home\", \"Prediction\", \"Dashboard\"], \n    icons=[\"house\", \"\", \"\"], \n    menu_icon=\"cast\",\n    default_index=0,\n    orientation=\"horizontal\",\n    styles={\n            \"container\": {\"padding\": \"0!important\", \"background-color\": \"#fafafa\"},\n            \"icon\": {\"color\": \"orange\", \"font-size\": \"25px\"},",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "pred_page",
+        "kind": 2,
+        "importPath": "app.prediction",
+        "description": "app.prediction",
+        "peekOfCode": "def pred_page():\n    with st.expander(\"My DataFrame\"):\n        st.info(\"This is my clean DataFrame\")\n        st.dataframe(df)\n    with st.sidebar:\n        st.subheader(\"Input Features\")\n        # Collecting input values from sliders\n        longitude = st.slider('Longitude', min_value=-125.0, max_value=-114.0, value=-120.0, step=0.1)\n        latitude = st.slider('Latitude', min_value=32.0, max_value=42.0, value=37.0, step=0.1)\n        housing_median_age = st.slider('Housing Median Age', min_value=1, max_value=100, value=30)",
+        "detail": "app.prediction",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "app.prediction",
+        "description": "app.prediction",
+        "peekOfCode": "df = pd.read_csv(\"cleaned_df.csv\")\n# Load the OneHotEncoder for 'ocean_proximity'\nwith open('encoded_ocean_proximity.pkl', 'rb') as f:\n    encoder = pickle.load(f)\ndef pred_page():\n    with st.expander(\"My DataFrame\"):\n        st.info(\"This is my clean DataFrame\")\n        st.dataframe(df)\n    with st.sidebar:\n        st.subheader(\"Input Features\")",
+        "detail": "app.prediction",
+        "documentation": {}
+    },
+    {
+        "label": "pred_page",
+        "kind": 2,
+        "importPath": "app.predictions",
+        "description": "app.predictions",
+        "peekOfCode": "def pred_page():\n    with st.expander(\"My DataFrame\"):\n        st.dataframe(df_clean)\n    with st.sidebar:\n        st.subheader(\"Input Features\")\n        longitude = st.slider('Longitude', min_value=df['longitude'].min(), max_value=df['longitude'].max(), value=df['longitude'].min())\n        latitude = st.slider('Latitude', min_value=df['latitude'].min(), max_value=df['latitude'].max(), value=df['latitude'].min()) \n        housing_median_age = st.slider('Housing Median Age', min_value=0.0, max_value=100.0, value=20.0)\n        median_income = st.slider('Median Income', df['median_income'].min(), df['median_income'].max(), df['median_income'].mean())\n        ocean_proximity = st.radio(\"Ocean Proximity\", options=df['ocean_proximity'].unique())",
+        "detail": "app.predictions",
+        "documentation": {}
+    },
+    {
+        "label": "df_clean",
+        "kind": 5,
+        "importPath": "app.predictions",
+        "description": "app.predictions",
+        "peekOfCode": "df_clean = pd.read_csv(\"cleaned_df.csv\")\ndf_clean.drop(columns=['Unnamed: 0'], inplace=True)\nprint(df_clean.head())\nwith open(\"encoded_ocean_proximity.pkl\", \"rb\") as f:\n    encoder = pickle.load(f) \nwith open(\"scaler.pkl\", \"rb\") as f:\n    scaling = pickle.load(f) \nprint(type(scaling))\nwith open(\"best_model_random_forest.pkl\", \"rb\") as f:\n    model = pickle.load(f)",
+        "detail": "app.predictions",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "app.predictions",
+        "description": "app.predictions",
+        "peekOfCode": "df = pd.read_csv('housing.csv')\ndef pred_page():\n    with st.expander(\"My DataFrame\"):\n        st.dataframe(df_clean)\n    with st.sidebar:\n        st.subheader(\"Input Features\")\n        longitude = st.slider('Longitude', min_value=df['longitude'].min(), max_value=df['longitude'].max(), value=df['longitude'].min())\n        latitude = st.slider('Latitude', min_value=df['latitude'].min(), max_value=df['latitude'].max(), value=df['latitude'].min()) \n        housing_median_age = st.slider('Housing Median Age', min_value=0.0, max_value=100.0, value=20.0)\n        median_income = st.slider('Median Income', df['median_income'].min(), df['median_income'].max(), df['median_income'].mean())",
+        "detail": "app.predictions",
+        "documentation": {}
+    }
+]
